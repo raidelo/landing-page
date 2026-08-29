@@ -10,13 +10,21 @@
         font-family: Roboto, sans-serif;
       }
 
+      body {
+        margin: 0;
+      }
+
+      header {
+        background-color: #1f2937;
+        margin: 0;
+        padding: 0px 220px;
+      }
+
       nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #f9faf8;
-        background-color: #1f2937;
-        padding: 14px;
+        padding-top: 18px;
       }
 
       nav ul {
@@ -24,13 +32,72 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        gap: 14px;
+        gap: 22px;
         font-size: 18px;
       }
 
       .logo {
         font-size: 24px;
         font-weight: bold;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 0px;
+      }
+
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        flex: 85;
+        padding-right: 60px;
+      }
+
+      .title {
+        font-size: 48px;
+        font-weight: 900;
+      }
+
+      .subtext {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      .image-placeholder {
+        flex: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(215, 6%, 48%);
+      }
+
+      header nav ul,
+      .subtext {
+        color: #e5e7eb;
+      }
+
+      .logo,
+      .title {
+        color: #f9faf8;
+      }
+
+      button.sign-up {
+        width: 130px;
+        height: 35px;
+        border-radius: 8px;
+        border-style: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+      }
+
+      button.coloured {
+        background-color: hsl(208, 100%, 44%);
+      }
+
+      .hero-left button {
+        align-self: flex-start;
       }
     </style>
   </head>
@@ -54,7 +121,7 @@
           </div>
           <button type="button" class="sign-up coloured">Sign up</button>
         </div>
-        <div class="image-placeholder">this is a placeholder for an image</div>
+        <div class="image-placeholder"></div>
       </div>
     </header>
 
