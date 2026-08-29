@@ -73,7 +73,8 @@
       }
 
       header nav ul,
-      .subtext {
+      .subtext,
+      .call-text {
         color: #e5e7eb;
       }
 
@@ -86,14 +87,10 @@
         width: 130px;
         height: 35px;
         border-radius: 8px;
-        border-style: none;
         font-weight: bold;
         font-size: 18px;
         color: white;
-      }
-
-      button.coloured {
-        background-color: hsl(208, 100%, 44%);
+        background-color: hsl(208, 92%, 50%);
       }
 
       .hero-left button {
@@ -132,7 +129,7 @@
       .card-img {
         width: 160px;
         height: 160px;
-        border: 4px solid hsl(208, 100%, 44%);
+        border: 4px solid hsl(208, 92%, 50%);
         border-radius: 16px;
       }
 
@@ -154,6 +151,41 @@
         align-self: flex-end;
         font-size: 24px;
         font-weight: bold;
+      }
+
+      .sign-up-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 220px;
+      }
+
+      .sign-up-box {
+        background-color: hsl(208, 92%, 50%);
+        border-radius: 12px;
+        padding: 50px 120px;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+      }
+
+      .call-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .call-text {
+        color: white;
+        font-size: 18px;
+      }
+
+      .coloured {
+        border-style: none;
+      }
+
+      .light {
+        border: 2px solid white;
       }
     </style>
   </head>
@@ -222,9 +254,11 @@
       </div>
       <div class="sign-up-section">
         <div class="sign-up-box">
-          <div class="call">Call to action! It's time!</div>
-          <div class="call-text">
-            Sign up for our product by clicking that button right over there!
+          <div class="call">
+            <div class="call-title">Call to action! It's time!</div>
+            <div class="call-text">
+              Sign up for our product by clicking that button right over there!
+            </div>
           </div>
           <button type="button" class="sign-up light">Sign up</button>
         </div>
