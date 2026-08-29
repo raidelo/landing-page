@@ -99,6 +99,42 @@
       .hero-left button {
         align-self: flex-start;
       }
+
+      .information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 32px;
+        padding: 32px;
+      }
+
+      .info-title {
+        font-size: 36px;
+        font-weight: 900;
+        color: #1f2937;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 160px;
+        text-align: center;
+      }
+
+      .card-img {
+        width: 160px;
+        height: 160px;
+        border: 4px solid hsl(208, 100%, 44%);
+        border-radius: 16px;
+      }
     </style>
   </head>
   <body>
@@ -131,7 +167,27 @@
         <div class="cards">
           <div class="card">
             <div class="card-img"></div>
-            this is some subtext under an ilustration or image
+            <div class="img-subtext">
+              this is some subtext under an ilustration or image
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"></div>
+            <div class="img-subtext">
+              this is some subtext under an ilustration or image
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"></div>
+            <div class="img-subtext">
+              this is some subtext under an ilustration or image
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"></div>
+            <div class="img-subtext">
+              this is some subtext under an ilustration or image
+            </div>
           </div>
         </div>
       </div>
